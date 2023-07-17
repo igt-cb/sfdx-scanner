@@ -12,8 +12,8 @@ public final class DmlUtil {
 
     /** map of database operation method strings -> DatabaseOperation for fromString method */
     private static final TreeMap<String, DatabaseOperation> METHOD_NAME_TO_DATABASE_OPERATION =
-        EnumUtil.getEnumTreeMap(
-            DatabaseOperation.class, DatabaseOperation::getDatabaseOperationMethod);
+            EnumUtil.getEnumTreeMap(
+                    DatabaseOperation.class, DatabaseOperation::getDatabaseOperationMethod);
 
     /**
      * An enumeration of all of the possible Database.method() methods in the Database class in
@@ -48,7 +48,6 @@ public final class DmlUtil {
         UPDATE_ASYNC("Database.updateAsync", true),
         UPDATE_IMMEDIATE("Database.updateImmediate", true),
         UPSERT("Database.upsert", true);
-
 
         /** stores the string representation of this method */
         private final String databaseOperationMethod;
